@@ -1,0 +1,390 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+    font-size: 16px
+    min-width: 320px
+    position: relative
+    line-height: 1.75
+    font-family: $default-font
+    overflow-x: hidden
+    opacity: 1
+    input, textarea
+        border: #666 1px solid
+        outline: none
+        &:focus:required:invalid
+            border-color: red
+        &:required:valid
+            border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.h1
+    text-transform: uppercase
+    font-size: 50px
+    margin: 0
+    padding: 0
+.h2
+    text-transform: uppercase
+    font-size: 28px
+    margin: 0
+    padding: 0
+.h3
+    text-transform: uppercase
+    font-size: 15px
+    margin: 0
+    padding: 0
+    
+.button
+    font-size: 12px
+    font-family: $robotobold
+    color: $accent
+    text-transform: uppercase
+    background-color: #000
+    padding: 17px 27px
+    border-radius: 5px
+
+
+section
+    background-position: center
+    background-size: cover
+    position: relative
+    height: auto
+
+header
+    color: #fff
+    height: auto
+.header
+    height: 700px
+    
+.header-topline
+    font-family: $robotobold, sans-serif
+    font-size: 15px
+    margin: 0
+    padding: 0
+    position: relative
+    padding-top: 20px
+    display: block
+    .logo
+        height: 100%
+    .header-left
+        position: absolute
+        right: 0
+        color: #fff
+        padding-top: 30px
+        ul
+            list-style-type: none
+            font-size: 16px
+            margin: 0
+            padding: 0
+            li
+                display: inline-block
+                padding-right: 18px
+                padding-left: 16px
+                margin-left: 10px
+                .fa
+                    font-size: 20px
+                a
+                    color: #fff
+                    text-transform: uppercase
+                    transition: color .2s ease
+                    text-align: center
+                &:hover,
+                    background-color: $accent
+                    border-radius: 3px
+                    a
+                        color: #000
+            .submenu
+                position: absolute
+                background-color: $accent
+                border-radius: 3px
+                padding-top: 2px
+                top: 54px
+                width: 100%
+                right: -10px
+                display: block
+                &:hover
+                    a
+                        color: #000
+
+                    
+.header-content
+    text-align: center
+    font-family: $robotobold
+    color: #fff
+    font-size: 16px
+    position: absolute
+    display: inline-block
+    width: 100%
+    height: auto
+    top: 245px
+    margin: 0
+    padding: 0
+    line-height: 1
+    p
+        font-family: 'RobotoThin', sans-serif
+        font-size: 28px
+        margin: 0
+        margin-bottom: 38px
+        padding: 0
+        margin-top: 5px
+        opacity: 0.75
+        span
+            color: $accent
+    .button
+        margin-top: 38px
+        text-align: center
+        text-decoration: none
+        color: $accent
+        transition: color .2s ease
+        &:hover
+            background-color: rgba(#000, .9)
+
+.scroll
+    position: absolute
+    bottom: 0
+    display: inline-block
+    text-align: center
+    width: 100%
+.header-scroll
+    height: 77px
+    width: 66px
+    display: inline-block
+    transition: opacity .2s ease
+    &:hover
+        opacity: 0.8
+
+.category
+    background-position: center
+    background-size: cover
+.category-content
+    height: auto
+    display: block
+    padding-top: 75px 
+    padding-bottom: 170px
+    .h2
+        display: inline-block
+        text-align: center
+        width: 100%
+        padding-bottom: 35px
+    .category-gallery
+        text-align: center
+        display: inline-block
+        width: 100%
+        .category-item
+            position: relative
+            width: 100%
+            height: 288px
+            background-position: center
+            background-size: cover
+            display: block
+            margin: 0
+            padding: 0
+            .h3
+                display: block
+                width: 100%
+                color: $accent
+                position: absolute
+                text-align: center
+                margin-top: 140px
+                margin-bottom: 0
+            p
+                color: #fff
+                text-align: center
+                font-family: 'RobotoLight'
+                font-size: 16px
+                position: absolute
+                margin: 0
+                padding: 0
+                width: 100%
+                margin-top: 164px
+            .button-white
+                background-color: transparent
+                color: #fff
+                font-family: $robotobold
+                text-transform: uppercase
+                font-size: 12px
+                padding: 10px 27px
+                border: 3px #fff solid
+                border-radius: 10px
+                text-decoration: none
+                display: inline-block
+                margin-top: 204px
+
+.items
+    height: auto
+.items-content
+    width: 100%
+    padding-bottom: 75px
+    display: inline-block
+    .h2
+        display: inline-block
+        text-align: center
+        width: 100%
+        padding-top: 45px
+        padding-bottom: 35px
+    .items-bikes
+        width: 100%
+        padding-bottom: 15px
+        .items-bike
+            display: inline-block
+            position: relative
+            width: 100%
+            img
+                width: 100%
+                margin: 0
+                padding: 0
+            .h3
+                position: absolute
+                left: 25px
+                display: block
+                width: 100%
+            p
+                position: absolute
+                font-size: 15px
+                margin: 0
+                padding: 0
+                width: 100%
+                margin-top: 20px
+                left: 25px
+            select
+                position: absolute
+                right: 100px
+                display: inline-block
+                padding: 8px 23px
+                border-radius: 10px
+                border: 1px #8f8f8f solid
+                text-transform: uppercase
+                font-family: $robotobold
+            .button-item
+                position: absolute
+                right: 0
+                display: inline-block
+                font-family: $robotobold
+                font-size: 12px
+                text-transform: uppercase
+                padding: 10px 33px
+                border-radius: 10px
+                color: #fff
+                background-color: #000
+                text-decoration: none
+                opacity: 0.6
+                transition: opacity .2s ease
+                &:hover
+                    opacity: 1
+                    color: #fff
+                    text-decoration: none
+                
+.callback
+    background-position: center
+    background-size: cover
+.callbacks
+    height: auto
+    display: block
+    padding-bottom: 65px
+.callback-info
+    width: 100%
+    padding-top: 55px
+    display: inline-block
+    text-align: center
+    .h2
+        padding-bottom: 35px
+    p
+        font-size: 15px
+        font-family: 'RobotoBold'
+        margin-bottom: 35px
+.callback-forms
+    position: relative
+.forms
+    width: 100%
+    text-align: center
+    .callback-name
+        display: inline-block
+        margin-right: 27px
+        width: 212px
+        margin-bottom: 28px
+    .callback-surname
+        display: inline-block
+        width: 212px
+    .callback-domain
+        display: block
+        width: 452px
+        margin-bottom: 28px
+        position: relative
+        left: 328px
+    .callback-message
+        width: 452px
+        padding-bottom: 152px
+        display: block
+        position: relative
+        left: 328px
+    input
+        padding: 8px 23px
+        border-radius: 10px
+        border: 1px #8f8f8f solid
+        text-transform: uppercase
+        font-family: $robotobold
+    .button-item
+        margin-top: 23px
+        width: 452px
+        display: inline-block
+        font-family: $robotobold
+        font-size: 12px
+        text-transform: uppercase
+        padding: 10px 33px
+        border-radius: 10px
+        color: #fff
+        background-color: #000
+        text-decoration: none
+        opacity: 0.6
+        transition: opacity .2s ease
+        &:hover
+            opacity: 1
+            color: #fff
+            text-decoration: none
+            
+.footer
+    height: auto
+    background-color: $accent
+    display: block
+    .footer-logo
+        padding: 18px 0
+        display: inline-block
+        width: 100%
+    .footer-menu
+        margin: 0
+        padding: 0
+        padding-top: 18px
+        list-style-type: none
+        position: absolute
+        width: 100%
+        li
+            position: relative
+            float: right
+            display: inline-block
+            font-family: $robotobold
+            font-size: 15px
+            a
+                color: #000
+                line-height: 2.5
+                margin-left: 35px
+                text-transform: uppercase
+                    
+@import "media" // Always at the end
